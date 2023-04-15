@@ -18,14 +18,14 @@
   --white-background-color: #ffffff;
   --modal-background-color: #fcfcfc;
   --hero-text-color: #ffffff;
-  --primary-bgd-color: #e5e5e5;
+  --additional-bgd-color: #e5e5e5;
   /* fonts */
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 }
 /* General */
 body {
-  background-color: var(--primary-bgd-color);
+  background-color: var(--white-background-color);
   color: var(--text-color);
   font-family: var(--primary-font);
   line-height: 1.5;
@@ -49,7 +49,8 @@ body {
   color: var(--logo-color);
 }
 .header {
-  background-color: var(--hero-text-color);
+  background-color: var(--white-background-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .nav-list,
@@ -66,8 +67,10 @@ body {
   font-style: normal;
 }
 /* Hero-section */
-.hero {
+.hero-section {
   background-color: var(--primary-text-color);
+}
+.hero {
   color: var(--hero-text-color);
   font-weight: 700;
   font-size: 56px;
@@ -86,6 +89,7 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
+  cursor: pointer;
 }
 .button:hover,
 .button:focus {
@@ -96,7 +100,6 @@ body {
   flex-direction: row;
   align-items: flex-start;
   padding: 12px 24px;
-  width: 69px;
   height: 48px;
   background-color: var(--secondary-btn-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -121,7 +124,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
-  width: 116px;
   height: 48px;
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
@@ -142,4 +144,37 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.description {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--text-color);
+}
+.team {
+  background-color: var(--light-color);
+}
+.crew {
+  background-color: var(--white-background-color);
+}
+.footer {
+  color: var(--light-color);
+  background-color: var(--header-color);
 }
