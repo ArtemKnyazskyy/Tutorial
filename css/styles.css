@@ -33,7 +33,7 @@ body {
 }
 /* Header */
 .nav-logo {
-  color: var(--primary-text-color);
+  color: var(--logo-color);
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 800;
@@ -45,26 +45,34 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-.logothip {
-  color: var(--logo-color);
+.studio,
+.nav-link {
+  color: var(--header-color);
 }
 .header {
   background-color: var(--white-background-color);
   border-bottom: 1px solid var(--accent-color);
 }
-
-.nav-list,
+.nav {
+  font-weight: 500;
+}
+.navigation:hover,
+.navigation:focus {
+  color: var(--secondary-btn-color);
+}
 .list {
   list-style: none;
 }
-.nav-link,
 .link {
-  color: var(--primary-text-color);
-  text-decoration-line: inherit;
+  text-decoration-line: none;
 }
 .contact-link {
   color: var(--text-color);
   font-style: normal;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--secondary-btn-color);
 }
 /* Hero-section */
 .hero-section {
@@ -78,6 +86,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 }
+/* Buttons */
 .button {
   color: var(--hero-text-color);
   background: var(--primary-btn-color);
@@ -95,21 +104,7 @@ body {
 .button:focus {
   background-color: var(--secondary-btn-color);
 }
-.button-active {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 12px 24px;
-  height: 48px;
-  background-color: var(--secondary-btn-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.button-passive {
+.button-filter {
   color: var(--primary-brand-color);
   font-weight: 500;
   font-size: 16px;
@@ -125,13 +120,19 @@ body {
   align-items: center;
   padding: 12px 24px;
   height: 48px;
-  background: #f4f4fd;
+  background-color: var(--light-color);
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   flex: none;
   order: 1;
   flex-grow: 0;
 }
+.button-filter:focus,
+.button-filter:hover {
+  color: var(--hero-text-color);
+  background-color: var(--secondary-btn-color);
+}
+/* Hidden item */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -146,6 +147,7 @@ body {
   overflow: hidden;
 }
 
+/* Section Header */
 .title {
   color: var(--header-color);
   font-weight: 700;
@@ -155,13 +157,16 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+/* List Header */
 .subtitle {
+  color: var(--header-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
 }
+/* Paragraph */
 .description {
   font-weight: 400;
   line-height: 1.5;
@@ -169,13 +174,22 @@ body {
   text-align: center;
   color: var(--text-color);
 }
+/* Cards Team */
+.team-list {
+  background-color: var(--hero-text-color);
+}
 .team {
   background-color: var(--light-color);
 }
+/* Cards Projects */
 .crew {
   background-color: var(--white-background-color);
 }
+/* Footer */
 .footer {
   color: var(--light-color);
   background-color: var(--header-color);
+}
+.studio-footer {
+  color: var(--light-color);
 }
